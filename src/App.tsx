@@ -1,25 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter, Route, Routes } from "react-router-dom"
 import './App.css';
+import Home from './components/views/Home';
+import HistoryView from './components/views/HistoryView';
+import User from './components/views/User';
+import Navbar from './components/common/Navbar';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+    <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="history" element={<HistoryView />} />
+        <Route path="user" element={<User />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

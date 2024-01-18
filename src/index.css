@@ -11,3 +11,182 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.navBar{
+  display: flex;
+  background-color: #000;
+  padding: 1rem;
+  flex-direction: row;
+  align-items: right;
+  justify-content: right;
+}
+a{
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+a:hover{
+  color: #fff;
+}
+
+.nav-item{
+  margin-right: 2rem;
+
+}
+
+.mainDiv {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 25%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.tableDiv {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 40%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.infohead {
+  align-items: center;
+  justify-content: center;
+}
+
+.input-icons i {
+  position: absolute;
+}
+
+.input-icons {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.icon {
+  position: relative;
+  left: 90%;
+  padding: 10px;
+  min-width: 40px;
+}
+
+.nameInput {
+  width: 94%;
+  padding: 6px 12px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  appearance: none;
+  border-radius: 4px;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  :focus{
+      color: #212529;
+      background-color: #fff;
+      border-color: #86b7fe;
+      outline: 0;
+      box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+  }
+  
+}
+
+.submitBtn {
+  width: 100%;
+  margin: 1rem;
+  text-align: center;
+  font-size: larger;
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+.submitBtn:disabled {
+  background-color: gray;
+}
+
+.resultDiv {
+  display: flex;
+  flex-direction: row;
+  border: solid 1px gray;
+  margin-top: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.usernameDiv {
+  margin-left: 2rem;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border: 1px solid #dddddd;
+  border-collapse: collapse;  
+  width: 100%;
+  height: 20vh;  
+  overflow-y: scroll;
+}
+
+tbody {
+  display: block;
+  height: 50vh; 
+  overflow-y: auto;
+}
+
+td, th {
+  text-align: left;
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+table {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  width: 100%;
+}
+table thead {
+  flex: 0 0 auto;
+  width: 100%
+}
+table tbody {
+  /* body takes all the remaining available space */
+  flex: 1 1 auto;
+  display: block;
+  overflow-y: scroll;
+}
+table tbody tr {
+  width: 100%;
+}
+table thead, table tbody tr {
+  display: table;
+  table-layout: fixed;
+}
+
+.clearBtn {
+  width: 50%;
+  margin: 1rem;
+  text-align: center;
+  font-size: larger;
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
